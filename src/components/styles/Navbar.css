@@ -1,0 +1,18 @@
+.Navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  .Navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .Navbar a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  

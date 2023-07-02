@@ -1,0 +1,76 @@
+.Login {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Login h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .Login form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Login input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .Login button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .Login button:hover {
+    background-color: #555;
+  }
+  
+  .Login p {
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+  }
+  
+  .Login p a {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 768px) {
+    .Login {
+      padding: 15px;
+    }
+  
+    .Login input,
+    .Login button {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .Login p {
+      font-size: 12px;
+      color: black;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Login {
+      max-width: 300px;
+    }
+  }
+  

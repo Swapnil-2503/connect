@@ -1,0 +1,136 @@
+.feed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feed__container {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+}
+
+.feed__form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.feed__form input[type="text"],
+.feed__form input[type="file"],
+.feed__form button {
+  margin-top: 10px;
+}
+
+.feed__post {
+  background-color: #fff;
+  padding: 20px;
+  color: black;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feed__postHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.feed__postAvatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.feed__postFile {
+  margin-bottom: 10px;
+}
+
+.feed__postFile a {
+  text-decoration: none;
+}
+
+.feed__postImage {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.feed__postActions button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.feed__postComments {
+  margin-bottom: 10px;
+}
+
+.feed__postComment {
+  margin-bottom: 5px;
+}
+
+.feed__commentForm {
+  display: flex;
+  align-items: center;
+}
+
+.feed__commentForm input[type="text"] {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.feed__commentForm button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.feed__post p {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .feed__container {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .feed__post {
+    padding: 15px;
+  }
+
+  .feed__postHeader {
+    margin-bottom: 5px;
+  }
+
+  .feed__postAvatar {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+  }
+
+  .feed__postFile a {
+    font-size: 12px;
+  }
+
+  .feed__postImage {
+    margin-bottom: 5px;
+  }
+
+  .feed__postActions button {
+    margin-right: 5px;
+  }
+
+  .feed__commentForm input[type="text"] {
+    margin-right: 5px;
+  }
+
+  .feed__commentForm button {
+    padding: 3px 8px;
+  }
+}

@@ -1,0 +1,174 @@
+.connect-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-bottom: 3%;
+}
+
+.sidebar {
+  flex: 1;
+  max-width: 300px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-right: 1px solid #ccc;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.search-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.search-form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #555;
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-list li {
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.user-list li.active {
+  background-color: #ccc;
+}
+
+.chat-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.chat-header {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.chat-history {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.message.sent {
+  background-color: #def3fc;
+  align-self: flex-end;
+}
+
+.message.received {
+  background-color: #fff;
+  align-self: flex-start;
+}
+
+.message-timestamp {
+  font-size: 12px;
+  color: #888;
+}
+
+.message-form {
+  display: flex;
+  align-items: center;
+}
+
+.message-form input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.message-form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.message-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .sidebar {
+    max-width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .search-form {
+    flex-direction: column;
+  }
+
+  .search-form input {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .chat-container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    padding: 10px;
+  }
+
+  .user-list li {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .chat-container {
+    padding: 10px;
+  }
+
+  .message-form input {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .message-form button {
+    padding: 8px 15px;
+  }
+}
