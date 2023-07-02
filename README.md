@@ -1,6 +1,6 @@
 # ConnectCampus
 
-### Social Media for Youth zen g
+### Social Media for Young Adults
 ### Goals
 - learn
 - explore
